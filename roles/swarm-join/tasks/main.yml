@@ -3,4 +3,5 @@
 - name: Add nodes
   docker_swarm:
     state: join
-    join_token: "{{ token_info }}"
+    join_token: "{{ hostvars['34.83.50.248']['result']['swarm_facts']['JoinTokens']['Worker'] }}"
+    remote_addrs: [ '34.83.50.248:2377' ]

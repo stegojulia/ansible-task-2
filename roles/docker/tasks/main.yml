@@ -8,6 +8,7 @@
     - python3
     - python3-pip
     - python-setuptools
+    - python-docker
   become: yes
 - name: 'get the docker apt'
   apt_key:
