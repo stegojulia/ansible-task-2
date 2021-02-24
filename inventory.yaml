@@ -1,0 +1,16 @@
+all:
+  children:
+    manager:
+      hosts:
+        34.83.50.248:
+      vars:
+        ansible_user: julia
+        ansible_ssh_private_key_file: '~/.ssh/ansible_id_rsa'
+
+    worker:
+      hosts:
+        35.199.169.221:
+      vars:
+        ansible_user: julia
+        ansible_ssh_private_key_file: '~/.ssh/ansible_id_rsa'
+

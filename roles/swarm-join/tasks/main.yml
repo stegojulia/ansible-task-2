@@ -1,0 +1,6 @@
+---
+# tasks file for swarm-join
+- name: Add nodes
+  docker_swarm:
+    state: join
+    join_token: "{{ token_info }}"
